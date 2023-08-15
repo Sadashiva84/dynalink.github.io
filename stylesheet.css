@@ -1,0 +1,435 @@
+/*   This is for the background   */
+
+body {
+    background-color: bisque;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/*   Header and Navbar   */
+
+#header {
+    background-color: rgb(147, 177, 127);
+    margin: 10px;
+    height: 90px;
+    border-radius: 2.5px;
+    padding-top: 5px;
+    display: flex; /* Use flexbox to arrange elements side by side */
+    align-items: center; /* Vertically center the content */
+}
+
+/*   This is for header h3  */
+
+#header h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /*Gives that scrolling effect as the typing happens */
+  /* margin-right: 50px; */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+#header h4 {
+
+    margin-right: 20px;
+}
+#header h4:hover {
+    color:bisque
+}
+
+#navbar ul {
+    padding: 8px;
+    list-style-type: none;
+    text-align: left;
+    background-color: #000;
+    margin: 10px;
+    border-radius: 2.5px;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-left: 58px;
+}
+
+#navbar ul li a {
+    border-radius: 10px;
+    text-decoration: none;
+    padding: .2em 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    background-color: #000;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-out;
+}
+
+#navbar ul li a:hover{
+    background-color: bisque;
+    color: #000;
+}
+
+/*   Here our paragraphs go   */
+
+.main {
+    background-color: rgb(147, 177, 127);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 260px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 110%;
+}
+
+.container {
+
+    text-align: center;
+}
+
+button{
+    background-color: bisque;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button:hover{
+
+    background-color: #000;
+    color: bisque;
+
+}
+
+h1 {
+    font-size: 120%;
+    color: #000;
+}
+
+h2 {
+    font-size: 110%;
+    color: #000;
+}
+
+h3 {
+    font-size: 220%;
+    text-align: left;
+    
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* To vertically align a css space */
+    /* margin: 0px; */
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-140%);
+
+}
+
+
+h4 {
+    font-size: 220%;
+    text-align: left;
+    padding-left: 65px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* To vertically align a css space */
+    /* margin: 0px; */
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-140%);
+
+}
+
+h3, h4 {
+
+    display: inline;
+}
+
+/*   This section for sidebar   */
+.sideright {
+
+    background-color: rgb(147, 177, 127);
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
+    float: right;
+    width: 200px;
+    clear: right;
+}
+
+.sideright a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+#sideanimation a:hover {
+    color: green;
+}
+
+.imagesidebar {
+    border-radius: 5px;
+    float: right;
+    width: 240px;
+    clear: right;
+    margin: 10px;
+    margin-top: 0px;
+    transition: opacity 0.2s ease-in-out;
+}
+.imagesidebar:hover {
+   opacity: 70%;
+}
+
+#footer {
+
+    background-color: rgb(147, 177, 127);
+    margin: 10px;
+    height: 50px;
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    font-size: 90%;
+
+}
+
+#footer h2 {
+    color: #000;
+}
+
+#footer h2:hover {
+    color: bisque;
+}
+
+#footer ul {
+
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    color: bisque;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#footer ul li {
+
+    display: inline;
+    text-align: center;
+}
+
+#footer ul li a {
+
+    border-radius: 10px;
+    text-decoration: none;
+    padding: .2em 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-out;
+    
+}
+
+#footer ul li a:hover{
+
+    background-color: bisque;
+    color: #000;
+
+}
+
+
+/* Dropdown Button */
+    .dropbtn1 {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content1 a:hover {background-color: bisque;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown1:hover .dropdown-content1 {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown1:hover .dropbtn1 {background-color: rgb(147, 177, 127); color: #000;}
+
+
+  /* Dropdown2 Button */
+.dropbtn2 {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {background-color: bisque;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown2:hover .dropdown-content2 {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown2:hover .dropbtn2 {background-color: rgb(147, 177, 127); color: #000;}
+
+
+
+    /* Dropdown3 Button */
+.dropbtn3 {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content3 a:hover {background-color: bisque;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown3:hover .dropdown-content3 {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown3:hover .dropbtn3 {background-color: rgb(147, 177, 127); color: #000;}
+
+
+
+
+   /* Dropdown4 Button */
+.dropbtn4 {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content4 a:hover {background-color: bisque;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown4:hover .dropdown-content3 {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown4:hover .dropbtn3 {background-color: rgb(147, 177, 127); color: #000;}
